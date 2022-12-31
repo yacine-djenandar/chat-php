@@ -2,7 +2,7 @@
     session_start();
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $pdo = new PDO('mysql:host=localhost;dbname=users','root','sonicmario1');
+    $pdo = new PDO('mysql:host=localhost;dbname=users','root','pwd');
     $query = $pdo->prepare("select * from chatters where email=? and password=?");
     $query->bindValue(1,$email);
     $query->bindValue(2,$password);
