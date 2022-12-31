@@ -1,7 +1,7 @@
 <div class="chat-container">
     <div class="receiver-infos">
         <?php
-            $pdo = new PDO('mysql:host=localhost;dbname=users', 'root', 'sonicmario1');
+            $pdo = new PDO('mysql:host=localhost;dbname=users', 'root', 'pwd');
             $my_email = openssl_decrypt($_SESSION['token'], "AES-128-CTR", "11112000", 0, "1234567890123456");
         if(strpos($_GET['with'], "r")===false) {
             $q4 = $pdo->prepare("select * from chatters where id=?");
