@@ -1,5 +1,5 @@
 <?php
-    $pdo = new PDO('mysql:host=localhost;dbname=users','root','sonicmario1');
+    $pdo = new PDO('mysql:host=localhost;dbname=users','root','pwd');
     $query = $pdo->prepare("update chatters set isConfirmed=true where email=?");
     $query->bindValue(1,$_GET['email']);
     $query->execute();
