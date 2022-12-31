@@ -1,0 +1,200 @@
+@import url(' https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
+@import url(' https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold !important;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding: 0 10px;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+
+.users {
+  padding: 25px 30px;
+
+}
+
+/* css header........................................................ */
+
+:is(.users, .users-list) header,
+a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  justify-content: space-between;
+  position: relative;
+}
+
+.wrapper img {
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+header input[type=text] {
+  width: 100%;
+  border: 2px solid #e6e6e6;
+  border-radius: 30px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+header input[type=text]:focus {
+  border-color: rgb(69, 69, 250);
+  box-shadow: 0 0 8px 0 rgb(69, 69, 250);
+}
+
+:is(.users, .users-list) .content,
+.content {
+  display: flex;
+  align-items: center;
+
+}
+
+:is(.users, .users-list) .details {
+  color: #000;
+  margin-left: 20px;
+}
+
+/* css footer.......................................................... */
+.users footer {
+
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.users footer input {
+  display: inline;
+  border: none;
+  color: #fff;
+  background: rgb(69, 69, 250);
+  border-radius: 5px;
+  padding: 7px 15px;
+  position: center;
+  left: 200px;
+}
+
+.users footer .create:hover {
+  background-color: rgb(42, 42, 233);
+}
+
+.users header img {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
+
+/* css search........................................................ */
+
+.users .search {
+  position: relative;
+  margin: 20px 0;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  border: 1px solid #e6e6e6;
+}
+
+.users .search .text {
+  font-size: 18px;
+}
+
+.users .search input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+
+}
+
+/* css list of users........................................................ */
+
+.users-list {
+  position: relative;
+  max-height: 350px;
+  overflow-y: auto;
+
+}
+
+.users-list::-webkit-scrollbar {
+  width: 0px;
+
+}
+
+.users-list a {
+  position: relative;
+  margin-bottom: 10px;
+  page-break-after: 10px;
+  padding-right: 10px;
+  border-bottom-color: #f1f1f1;
+}
+
+.users-list a:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.users-list a .content img {
+  height: 40px;
+  width: 40px;
+}
+
+.users-list .pretty .state label {
+  padding-right: 14rem;
+  text-indent: inherit;
+}
+
+.users-list .pretty .state label:after,
+.users-list .pretty .state label:before {
+  left: 18rem;
+  right: 0;
+}
+
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=submit] {
+  cursor: pointer;
+}
+
+input[type=checkbox]+label {
+  margin-left: -22px;
+}
+

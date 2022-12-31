@@ -1,0 +1,24 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+a {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
