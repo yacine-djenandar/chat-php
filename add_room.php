@@ -1,7 +1,7 @@
 <?php
 session_start();
 $my_email = openssl_decrypt($_SESSION['token'], "AES-128-CTR", "11112000", 0, "1234567890123456");
-$pdo = new PDO('mysql:host=localhost;dbname=users', 'root', 'sonicmario1');
+$pdo = new PDO('mysql:host=localhost;dbname=users', 'root', 'pwd');
 if (!empty($_POST['user'])) {
   $room_name = $_POST['room_name'];
   $q = $pdo->prepare('insert into rooms(room_name) values (?)');
