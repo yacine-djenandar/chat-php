@@ -2,7 +2,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     
-    $pdo = new PDO('mysql:host=localhost;dbname=users','root','sonicmario1');
+    $pdo = new PDO('mysql:host=localhost;dbname=users','root','pwd');
     $query = $pdo->prepare("select * from chatters where email=?");
     $query->bindValue(1,$_POST['email']);
     $query->execute();
